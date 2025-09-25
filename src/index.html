@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Week 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./page-2.html"
+                >Page 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="./page-3.html"
+                >Page 3</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main></main>
 
     <load src="./partials/footer.html" />
 

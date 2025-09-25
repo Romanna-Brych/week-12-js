@@ -4,25 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>Pagination</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <load src="./partials/back-link.html" />
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./page-2.html"
+                >Page 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="./page-3.html"
+                >Page 3</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
+      <div class="container"></div>
+      <div id="app">
+        <ul class="js-movie-list movie-list"></ul>
+
+        <div class="button-container">
+          <button class="js-load-more load-more-hidden">Load more</button>
+        </div>
       </div>
     </main>
 
     <load src="./partials/footer.html" />
+    <script type="module" src="./js/page-2.js"></script>
   </body>
 </html>
